@@ -47,5 +47,5 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.disable-compile-files-on-did-save-code": true,
 }
