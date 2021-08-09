@@ -1,7 +1,6 @@
-const add = (a, b) => {
+const add = (a: any, b: any) => {
   console.log(a + b);
   return a + b;
 };
-const a = 1;
-
+const aa = 1;
 export default add;

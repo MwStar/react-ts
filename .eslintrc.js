@@ -1,6 +1,6 @@
-const OFF = 0
-const WARN = 1
-const ERROR = 2
+const OFF = 0;
+const WARN = 1;
+const ERROR = 2;
 
 module.exports = {
   env: {
@@ -33,6 +33,8 @@ module.exports = {
       node: {
         extensions: ['.tsx', '.ts', '.js', '.json'],
       },
+      // 支持通过Components引入
+      typescript: {},
     },
   },
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
@@ -113,11 +115,11 @@ module.exports = {
     'no-plusplus': OFF,
     'no-console': OFF,
     'class-methods-use-this': ERROR,
-    'jsx-quotes': [ERROR, 'prefer-single'],
+    'jsx-quotes': [WARN, 'prefer-single'],
     'global-require': OFF,
     'no-use-before-define': OFF,
     'no-restricted-syntax': OFF,
     'no-continue': OFF,
     'no-var': ERROR,
   },
-}
+};
